@@ -73,6 +73,9 @@
   'tutoWelcomeBundle::layout.html.twig~' => '/home/ubuntu/gs/Symfony/src/tuto/WelcomeBundle/Resources/views/layout.html.twig~',
   'tutoWelcomeBundle:Contact:contact.html.twig' => '/home/ubuntu/gs/Symfony/src/tuto/WelcomeBundle/Resources/views/Contact/contact.html.twig',
   'gsBlogBundle:Default:index.html.twig' => '/home/ubuntu/gs/Symfony/src/gs/BlogBundle/Resources/views/Default/index.html.twig',
+  'gsBlogBundle:Default:index.html.twig~' => '/home/ubuntu/gs/Symfony/src/gs/BlogBundle/Resources/views/Default/index.html.twig~',
+  'gsBlogBundle:Blog:index.html.twig' => '/home/ubuntu/gs/Symfony/src/gs/BlogBundle/Resources/views/Blog/index.html.twig',
+  'gsBlogBundle:Blog:index.html.twig~' => '/home/ubuntu/gs/Symfony/src/gs/BlogBundle/Resources/views/Blog/index.html.twig~',
   'WebProfilerBundle:Collector:config.html.twig' => '/home/ubuntu/gs/Symfony/vendor/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/config.html.twig',
   'WebProfilerBundle:Collector:events.html.twig' => '/home/ubuntu/gs/Symfony/vendor/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/events.html.twig',
   'WebProfilerBundle:Collector:exception.html.twig' => '/home/ubuntu/gs/Symfony/vendor/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/exception.html.twig',
@@ -100,4 +103,6 @@
   'SensioDistributionBundle:Configurator:layout.html.twig' => '/home/ubuntu/gs/Symfony/vendor/bundles/Sensio/Bundle/DistributionBundle/Resources/views/Configurator/layout.html.twig',
   'SensioDistributionBundle:Configurator:steps.html.twig' => '/home/ubuntu/gs/Symfony/vendor/bundles/Sensio/Bundle/DistributionBundle/Resources/views/Configurator/steps.html.twig',
   '::base.html.twig' => '/home/ubuntu/gs/Symfony/app/Resources/views/base.html.twig',
+  '::layout.html.twig~' => '/home/ubuntu/gs/Symfony/app/Resources/views/layout.html.twig~',
+  '::layout.html.twig' => '/home/ubuntu/gs/Symfony/app/Resources/views/layout.html.twig',
 );

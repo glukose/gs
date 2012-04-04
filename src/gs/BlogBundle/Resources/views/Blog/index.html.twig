@@ -1,0 +1,15 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+	 {{ parent() }} - Insurance Blog
+{% endblock %}
+
+{% block content %}
+
+
+
+	{# On définit un nouveau block, que les vues du bundle pourront étendre #}
+	{% block sdzblog_body %}
+	{% endblock %}
+
+{% endblock %}

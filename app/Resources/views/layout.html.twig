@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{% block title %}GS{% endblock %}</title>
+    {% block stylesheets %}
+      <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" />
+    {% endblock %}
+
+  </head>
+
+  <body>
+    <div id="wrapper_outer">
+      <div id="top">
+	<div id="topC">
+          <div id="insurance1"></div>
+          <div id="insurance2"></div>
+	</div>
+      </div>
+      
+      <div id="header">
+	<div id="headerC">
+          <img src="{{asset('img/gslogo.png')}}" width="961" height="138" >    
+	</div>
+      </div>
+      
+      <div id="content">
+	{% block content %}GS{% endblock %}
+      </div>
+      <div id="footer"> <!-- changer en <footer> -->
+        <div id="bottombar"><div id="bot"> <img src="{{asset('img/newsletter.gif')}}" width="966" height="64"> </div> </div>
+        <div id="credits"><div id="bot"> <img src="{{asset('img/credits.gif')}}" width="962" height="53"> </div>  </div>
+      </div>
+    </div>
+  </body>
+</html>

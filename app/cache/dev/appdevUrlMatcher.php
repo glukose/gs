@@ -85,8 +85,11 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         // gsBlogBundle_homepage
-        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]+?)$#xs', $pathinfo, $matches)) {
-            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'gs\\BlogBundle\\Controller\\DefaultController::indexAction',)), array('_route' => 'gsBlogBundle_homepage'));
+        if (rtrim($pathinfo, '/') === '/first') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'gsBlogBundle_homepage');
+            }
+            return array (  '_controller' => 'gs\\BlogBundle\\Controller\\BlogController::indexAction',  '_route' => 'gsBlogBundle_homepage',);
         }
 
         // tutoWelcomeBundle_whoami
