@@ -1,0 +1,15 @@
+{% extends "tutoWelcomeBundle::layout.html.twig" %}
+
+{% block content %}
+<p>Contactez nous
+
+<form action="#" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+
+    {{ form_rest(form) }}
+
+    <input type="submit" />
+</form>
+
+
+{% endblock %}

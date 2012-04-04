@@ -1,0 +1,13 @@
+{% block content %}
+<p>Contactez nous
+
+<form action="{{ path('task_new') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+
+    {{ form_rest(form) }}
+
+    <input type="submit" />
+</form>
+
+
+{% endblock %}

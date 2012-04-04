@@ -1,0 +1,13 @@
+tutoWelcomeBundle_whoami:
+    pattern: /qui-suis-je/{name}
+    defaults: { _controller: tutoWelcomeBundle:Homepage:whoAmI }
+    requirements:
+      name: \w+
+
+tutoWelcomeBundle_homepage:
+    pattern:  /
+    defaults: { _controller: tutoWelcomeBundle:Homepage:index }
+
+tutoWelcomeBundle_contact:
+    pattern: /contact
+    defaults: { _controller: tutoWelcomeBundle:Contact:contact }

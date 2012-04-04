@@ -1,0 +1,30 @@
+article:
+    pattern:  /
+    defaults: { _controller: "tutoWelcomeBundle:Article:index" }
+
+article_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "tutoWelcomeBundle:Article:show" }
+
+article_new:
+    pattern:  /new
+    defaults: { _controller: "tutoWelcomeBundle:Article:new" }
+
+article_create:
+    pattern:  /create
+    defaults: { _controller: "tutoWelcomeBundle:Article:create" }
+    requirements: { _method: post }
+
+article_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "tutoWelcomeBundle:Article:edit" }
+
+article_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "tutoWelcomeBundle:Article:update" }
+    requirements: { _method: post }
+
+article_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "tutoWelcomeBundle:Article:delete" }
+    requirements: { _method: post }

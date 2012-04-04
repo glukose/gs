@@ -1,0 +1,46 @@
+<?php
+
+namespace tuto\WelcomeBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use tuto\WelcomeBundle\Entity\Article;
+
+class HomepageController extends Controller
+{    
+    public function indexAction()
+    {
+      
+      $article = new Article;
+      $article->setTitre('Mon dernier weekend');
+      $article->setContenu("C'était vraiment super et on s'est bien amusé.");
+      $article->setDate("la date du jour");
+
+      // On récupére l'EntityManager
+      $em = $this->getDoctrine()->getEntityManager();
+
+      // Etape 1 : On "persiste" l'entité
+      $em->persist($article);
+
+      // Etape 2 : On "flush" tout ce qui a été persisté avant
+      $em->flush();
+
+    
+	$this->get('session')->setFlash('notice', 'Bienvenue à toi '.$this->get('session')->get('user_name').' !');
+
+        return $this->render('tutoWelcomeBundle:Homepage:index.html.twig');
+    }
+
+    public function whoAmIAction($name)
+    {
+	
+	# get the session
+    	$session = $this->get('session');
+
+    	# store the user'name in the session
+	$session->set('user_name', $name);
+	
+	return $this->redirect($this->container->get('router')->generate('tutoWelcomeBundle_homepage'));
+		
+	
+    }
+}
