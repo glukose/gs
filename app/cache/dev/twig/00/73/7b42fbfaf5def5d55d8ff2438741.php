@@ -34,10 +34,10 @@ class __TwigTemplate_00737b42fbfaf5def5d55d8ff2438741 extends Twig_Template
 ";
     }
 
-    // line 12
+    // line 120
     public function block_sdzblog_body($context, array $blocks = array())
     {
-        // line 13
+        // line 121
         echo "\t";
     }
 
@@ -45,14 +45,122 @@ class __TwigTemplate_00737b42fbfaf5def5d55d8ff2438741 extends Twig_Template
     public function block_content($context, array $blocks = array())
     {
         // line 8
-        echo "
+        echo "</br>
+<div id=\"gradient\">
+  <div id=\"menu\">
+    <ul class=\"sf-menu\">
+      <li class=\"current\">
+\t<a href=\"#a\">Home</a>
+\t<ul>
+          <li>
+            <a href=\"#aa\">menu item that is quite long</a>
+          </li>
+          <li class=\"current\">
+            <a href=\"#ab\">menu item</a>
+            <ul>
+              <li class=\"current\"><a href=\"#\">menu item</a></li>
+              <li><a href=\"#aba\">menu item</a></li>
+              <li><a href=\"#abb\">menu item</a></li>
+              <li><a href=\"#abc\">menu item</a></li>
+              <li><a href=\"#abd\">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=\"#\">Approach</a>
+            <ul>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=\"#\">menu item</a>
+            <ul>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+            </ul>
+          </li>
+\t</ul>
+      </li>
+      <li>
+\t<a href=\"#\">Approach</a>
+      </li>
+      <li>
+\t<a href=\"#\">Services</a>
+\t<ul>
+          <li>
+            <a href=\"#\">menu item</a>
+            <ul>
+              <li><a href=\"#\">short</a></li>
+              <li><a href=\"#\">short</a></li>
+              <li><a href=\"#\">short</a></li>
+              <li><a href=\"#\">short</a></li>
+              <li><a href=\"#\">short</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=\"#\">menu item</a>
+            <ul>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=\"#\">menu item</a>
+            <ul>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=\"#\">menu item</a>
+            <ul>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=\"#\">menu item</a>
+            <ul>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+              <li><a href=\"#\">menu item</a></li>
+            </ul>
+          </li>
+\t</ul>
+      </li>
+      <li>
+\t<a href=\"#\">Staff</a>
+      </li>
+      <li>
+\t<a href=\"#\">Contact</a>
+      </li>            
+    </ul>
+  </div>
+</div>
 
 
 \t";
-        // line 12
+        // line 120
         echo "\t";
         $this->displayBlock('sdzblog_body', $context, $blocks);
-        // line 14
+        // line 122
         echo "
 ";
     }

@@ -75,7 +75,24 @@ body{
     width:980px;/*largeur du site*/
     margin:auto;/*permet de centrer le site*/
 }
-
+#menu{
+    padding-top: 10px;
+    margin-left: 450px;
+}
+#gradient{
+    margin-right: 14px;
+    margin-left: 14px;
+    height: 40px;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(235,235,235) 100%);
+    /*
+    background-image: linear-gradient(bottom, rgb(255,255,255) 0%, rgb(235,235,235) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(235,235,235) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(235,235,235) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(235,235,235) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(235,235,235) 100%);
+    */
+}
 
 
 #footer
