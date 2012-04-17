@@ -42,7 +42,7 @@ class __TwigTemplate_0cf65d8a7b962639af0d8bfde590927f extends Twig_Template
         $this->displayBlock('jquery', $context, $blocks);
         // line 23
         echo "       jQuery('ul.sf-menu').superfish();
-\t\t});
+       });
        
      </script>  
 
@@ -52,7 +52,7 @@ class __TwigTemplate_0cf65d8a7b962639af0d8bfde590927f extends Twig_Template
     <div id=\"wrapper_outer\">
       <div id=\"top\">
 \t<div id=\"topC\">
-          <div id=\"insurance1\"></div>
+          <div id=\"insurance1\"> </div>
           <div id=\"insurance2\"></div>
 \t</div>
       </div>

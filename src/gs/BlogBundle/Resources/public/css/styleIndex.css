@@ -1,0 +1,135 @@
+#intro{
+    margin-top: -350px;
+    margin-left: 660px;
+    padding-right: 5px;
+    height: 350px;
+}
+#separator{
+    margin-left: 50px;
+    
+}
+
+.clear{
+       clear: both;
+}
+   
+#news{
+    float: left;
+    /*taille sans le calcul des padding : 726 (retrancher la somme des paddings)*/
+    width: 686px;  
+    padding-left: 30px;
+    padding-right: 20px;
+    /*text-align:justify;*/
+}
+
+#right{
+    float: left;
+    width: 215px; 
+    
+    background-image: -webkit-linear-gradient(right , rgb(255,255,255) 0%, rgb(247,247,247) 56%);
+    box-shadow: 0px 1px 1px #000;
+    border-radius: 10px;
+    
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#lastN{
+    margin-left: 10px;
+}
+
+.title{ 
+    font-family: 'Rokkitt';
+    font-weight: 700;
+    font-size: 32px;
+    color: #004ea1;
+    /*color: #05386e;*/
+}
+.subtitle{ 
+    font-family: 'Rokkitt';
+    font-weight: 400;
+    font-size: 12px;
+    color: #b5b5b5;
+}
+
+/*****************************************************************
+*                           CARROUSEL                            *
+******************************************************************/
+#slides {
+	position:absolute;
+	top:15px;
+	left:4px;
+	z-index:3;
+}
+.slides_container {
+	width:570px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+.slides_container a {
+	width:570px;
+	height:270px;
+	display:block;
+}
+.slides_container a img {
+	display:block;
+}
+#slides .next,#slides .prev {
+	position:absolute;
+	top:107px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+#slides .next {
+	left:585px;
+}
+#example {
+	width:600px;
+	height:350px;
+    margin-left: 45px;
+    margin-top: 40px;
+	position:relative;
+}
+#frame {
+	position:absolute;
+	z-index:0;
+	width:739px;
+	height:341px;
+	top:-3px;
+	left:-80px;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
