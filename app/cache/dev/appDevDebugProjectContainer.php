@@ -213,8 +213,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getDoctrine_Orm_DefaultEntityManagerService()
     {
-        $a = new \Doctrine\Common\Cache\ArrayCache();
-        $a->setNamespace('sf2orm_default_65a44018e07fb75ffc050d3cb5fbb026');
+        $a = $this->get('annotation_reader');
 
         $b = new \Doctrine\Common\Cache\ArrayCache();
         $b->setNamespace('sf2orm_default_65a44018e07fb75ffc050d3cb5fbb026');
@@ -222,21 +221,29 @@ class appDevDebugProjectContainer extends Container
         $c = new \Doctrine\Common\Cache\ArrayCache();
         $c->setNamespace('sf2orm_default_65a44018e07fb75ffc050d3cb5fbb026');
 
-        $d = new \Doctrine\ORM\Mapping\Driver\DriverChain();
-        $d->addDriver(new \Doctrine\ORM\Mapping\Driver\AnnotationDriver(new \Symfony\Bridge\Doctrine\Annotations\IndexedReader($this->get('annotation_reader')), array(0 => '/home/ubuntu/gs/Symfony/src/tuto/WelcomeBundle/Entity')), 'tuto\\WelcomeBundle\\Entity');
+        $d = new \Doctrine\Common\Cache\ArrayCache();
+        $d->setNamespace('sf2orm_default_65a44018e07fb75ffc050d3cb5fbb026');
 
-        $e = new \Doctrine\ORM\Configuration();
-        $e->setEntityNamespaces(array('tutoWelcomeBundle' => 'tuto\\WelcomeBundle\\Entity'));
-        $e->setMetadataCacheImpl($a);
-        $e->setQueryCacheImpl($b);
-        $e->setResultCacheImpl($c);
-        $e->setMetadataDriverImpl($d);
-        $e->setProxyDir('/home/ubuntu/gs/Symfony/app/cache/dev/doctrine/orm/Proxies');
-        $e->setProxyNamespace('Proxies');
-        $e->setAutoGenerateProxyClasses(true);
-        $e->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
+        $e = new \Symfony\Bridge\Doctrine\Annotations\IndexedReader($a);
 
-        return $this->services['doctrine.orm.default_entity_manager'] = call_user_func(array('Doctrine\\ORM\\EntityManager', 'create'), $this->get('doctrine.dbal.default_connection'), $e);
+        $f = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($e, array(0 => '/home/ubuntu/gs/Symfony/src/tuto/WelcomeBundle/Entity', 1 => '/home/ubuntu/gs/Symfony/src/gs/BlogBundle/Entity'));
+
+        $g = new \Doctrine\ORM\Mapping\Driver\DriverChain();
+        $g->addDriver($f, 'tuto\\WelcomeBundle\\Entity');
+        $g->addDriver($f, 'gs\\BlogBundle\\Entity');
+
+        $h = new \Doctrine\ORM\Configuration();
+        $h->setEntityNamespaces(array('tutoWelcomeBundle' => 'tuto\\WelcomeBundle\\Entity', 'gsBlogBundle' => 'gs\\BlogBundle\\Entity'));
+        $h->setMetadataCacheImpl($b);
+        $h->setQueryCacheImpl($c);
+        $h->setResultCacheImpl($d);
+        $h->setMetadataDriverImpl($g);
+        $h->setProxyDir('/home/ubuntu/gs/Symfony/app/cache/dev/doctrine/orm/Proxies');
+        $h->setProxyNamespace('Proxies');
+        $h->setAutoGenerateProxyClasses(true);
+        $h->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
+
+        return $this->services['doctrine.orm.default_entity_manager'] = call_user_func(array('Doctrine\\ORM\\EntityManager', 'create'), $this->get('doctrine.dbal.default_connection'), $h);
     }
 
     /**

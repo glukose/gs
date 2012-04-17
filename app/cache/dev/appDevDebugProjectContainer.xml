@@ -1589,6 +1589,7 @@
           <call method="setEntityNamespaces">
             <argument type="collection">
               <argument key="tutoWelcomeBundle">tuto\WelcomeBundle\Entity</argument>
+              <argument key="gsBlogBundle">gs\BlogBundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -1631,10 +1632,27 @@
                       </argument>
                       <argument type="collection">
                         <argument>/home/ubuntu/gs/Symfony/src/tuto/WelcomeBundle/Entity</argument>
+                        <argument>/home/ubuntu/gs/Symfony/src/gs/BlogBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
                   <argument>tuto\WelcomeBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service">
+                        <service class="Symfony\Bridge\Doctrine\Annotations\IndexedReader" public="false">
+                          <argument type="service" id="annotation_reader"/>
+                        </service>
+                      </argument>
+                      <argument type="collection">
+                        <argument>/home/ubuntu/gs/Symfony/src/tuto/WelcomeBundle/Entity</argument>
+                        <argument>/home/ubuntu/gs/Symfony/src/gs/BlogBundle/Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>gs\BlogBundle\Entity</argument>
                 </call>
               </service>
             </argument>

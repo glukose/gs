@@ -79,10 +79,10 @@ class __TwigTemplate_00737b42fbfaf5def5d55d8ff2438741 extends Twig_Template
 ";
     }
 
-    // line 239
+    // line 235
     public function block_sdzblog_body($context, array $blocks = array())
     {
-        // line 240
+        // line 236
         echo "\t";
     }
 
@@ -97,12 +97,8 @@ class __TwigTemplate_00737b42fbfaf5def5d55d8ff2438741 extends Twig_Template
       <li class=\"current\">
 \t<a href=\"#a\">Home</a>
 \t<ul>
-          <li>
-            <a href=\"#aa\">menu item that is quite long</a>
-          </li>
-          <li class=\"current\">
-            <a href=\"#ab\">menu item</a>
-            <ul>
+          <li><a href=\"#aa\">Our company</a></li>
+          <li class=\"current\"><a href=\"#ab\">menu item</a><ul>
               <li class=\"current\"><a href=\"#\">menu item</a></li>
               <li><a href=\"#aba\">menu item</a></li>
               <li><a href=\"#abb\">menu item</a></li>
@@ -212,16 +208,16 @@ class __TwigTemplate_00737b42fbfaf5def5d55d8ff2438741 extends Twig_Template
       <a href=\"http://www.flickr.com/photos/aftab/3152515428/\" title=\"Save my love for loneliness | Flickr - Photo Sharing!\" target=\"_blank\"><img src=\"http://slidesjs.com/examples/standard/img/slide-7.jpg\" width=\"570\" height=\"270\" alt=\"Slide 7\"></a>
     </div>
     <a href=\"#\" class=\"prev\"><img src=\"";
-        // line 149
+        // line 145
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/gsblog/images/arrow-prev.png"), "html", null, true);
         echo "\" width=\"24\" height=\"43\" alt=\"Arrow Prev\"></a>
     <a href=\"#\" class=\"next\"><img src=\"";
-        // line 150
+        // line 146
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/gsblog/images/arrow-next.png"), "html", null, true);
         echo "\" width=\"24\" height=\"43\" alt=\"Arrow Next\"></a>
   </div>
   <img src=\"";
-        // line 152
+        // line 148
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/gsblog/images/example-frame.png"), "html", null, true);
         echo "\" width=\"739\" height=\"341\" alt=\"Example Frame\" id=\"frame\">
 </div>
@@ -232,7 +228,7 @@ class __TwigTemplate_00737b42fbfaf5def5d55d8ff2438741 extends Twig_Template
 
 </div>
 <img src=\"";
-        // line 160
+        // line 156
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/gsblog/images/news.png"), "html", null, true);
         echo "\" width=\"853\" height=\"44\" id=\"separator\">
   </br>
@@ -242,7 +238,7 @@ class __TwigTemplate_00737b42fbfaf5def5d55d8ff2438741 extends Twig_Template
     <div class=\"subtitle\">Posted by Jeffrey Hill on February 22, 2012 at 10:10 AM</div>
      </br>
      <img src=\"";
-        // line 167
+        // line 163
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/gsblog/images/winte2r.jpg"), "html", null, true);
         echo "\" width=\"615\" height=\"158\" style=\"margin-left: 25px;\">
      </br>
@@ -277,7 +273,7 @@ class __TwigTemplate_00737b42fbfaf5def5d55d8ff2438741 extends Twig_Template
             <div class=\"subtitle\">Posted by Jeffrey Hill on February 22, 2012 at 10:10 AM</div>
                 </br>
                 <img src=\"";
-        // line 199
+        // line 195
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/gsblog/images/winte2r.jpg"), "html", null, true);
         echo "\" width=\"615\" height=\"158\" style=\"margin-left: 25px;\">
                 </br>
@@ -299,7 +295,7 @@ class __TwigTemplate_00737b42fbfaf5def5d55d8ff2438741 extends Twig_Template
             
             <div id=\"right\">
               <img src=\"";
-        // line 218
+        // line 214
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/gsblog/images/lastNews.png"), "html", null, true);
         echo "\" width=\"157\" height=\"42\" id=\"lastN\">
                 </br></br>
@@ -312,16 +308,16 @@ class __TwigTemplate_00737b42fbfaf5def5d55d8ff2438741 extends Twig_Template
                 Quinn Insurance 
                 </br></br></br></br></br></br></br>
                 <img src=\"";
-        // line 228
+        // line 224
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/gsblog/images/partners.png"), "html", null, true);
         echo "\" width=\"156\" height=\"37\" id=\"lastN\">
                 </br></br></br>
                 <img src=\"";
-        // line 230
+        // line 226
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/gsblog/images/cherry.png"), "html", null, true);
         echo "\" width=\"138\" height=\"56\"></br></br></br>
                 <img src=\"";
-        // line 231
+        // line 227
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/gsblog/images/biba.png"), "html", null, true);
         echo "\" width=\"68\" height=\"109\" ></br>
                 </br>
@@ -331,10 +327,10 @@ class __TwigTemplate_00737b42fbfaf5def5d55d8ff2438741 extends Twig_Template
             <div class=\"clear\"></div>
             
 \t";
-        // line 239
+        // line 235
         echo "\t";
         $this->displayBlock('sdzblog_body', $context, $blocks);
-        // line 241
+        // line 237
         echo "
 ";
     }
