@@ -1,0 +1,194 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+	 {{ parent() }} - Insurance Blog
+{% endblock %}
+
+{% block javascripts %}
+	 {{ parent() }}
+         <script type="text/javascript" src="{{ asset ('bundles/gsblog/js/slides.min.jquery.js') }}" ></script>
+{% endblock %}
+
+{% block jquery %}
+   $('#slides').slides({
+      preload: true,
+      preloadImage: 'img/loading.gif',
+      play: 5000,
+      pause: 2500,
+      hoverPause: true
+});
+{% endblock %}
+
+{% block stylesheets %}
+	 {{ parent() }}
+         <link rel="stylesheet" href="{{ asset('bundles/gsblog/css/styleIndex.css') }}" type="text/css" />
+{% endblock %}
+
+{% block content %}
+</br>
+<div id="gradient">
+  <div id="menu">
+    <ul class="sf-menu">
+      <li class="current">
+	<a href="#a">Home</a>
+	<ul>
+          <li><a href="#aa">Our company</a></li>
+          <li class="current"><a href="#ab">menu item</a><ul>
+              <li class="current"><a href="#">menu item</a></li>
+              <li><a href="#aba">menu item</a></li>
+              <li><a href="#abb">menu item</a></li>
+              <li><a href="#abc">menu item</a></li>
+              <li><a href="#abd">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Approach</a>
+            <ul>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">menu item</a>
+            <ul>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+            </ul>
+          </li>
+	</ul>
+      </li>
+      <li>
+	<a href="#">Approach</a>
+      </li>
+      <li>
+	<a href="#">Services</a>
+	<ul>
+          <li>
+            <a href="#">menu item</a>
+            <ul>
+              <li><a href="#">short</a></li>
+              <li><a href="#">short</a></li>
+              <li><a href="#">short</a></li>
+              <li><a href="#">short</a></li>
+              <li><a href="#">short</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">menu item</a>
+            <ul>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">menu item</a>
+            <ul>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">menu item</a>
+            <ul>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">menu item</a>
+            <ul>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+              <li><a href="#">menu item</a></li>
+            </ul>
+          </li>
+	</ul>
+      </li>
+      <li>
+	<a href="#">Staff</a>
+      </li>
+      <li>
+	<a href="#">Contact</a>
+      </li>            
+    </ul>
+  </div>
+</div>
+
+<div id="example">
+  <div id="slides">
+    <div class="slides_container">
+      <a href="http://www.flickr.com/photos/jliba/4665625073/" title="145.365 - Happy Bokeh Thursday! | Flickr - Photo Sharing!" target="_blank"><img src="http://slidesjs.com/examples/standard/img/slide-1.jpg" width="570" height="270" alt="Slide 1"></a>
+      <a href="http://www.flickr.com/photos/stephangeyer/3020487807/" title="Taxi | Flickr - Photo Sharing!" target="_blank"><img src="http://slidesjs.com/examples/standard/img/slide-2.jpg" width="570" height="270" alt="Slide 2"></a>
+      <a href="http://www.flickr.com/photos/childofwar/2984345060/" title="Happy Bokeh raining Day | Flickr - Photo Sharing!" target="_blank"><img src="http://slidesjs.com/examples/standard/img/slide-3.jpg" width="570" height="270" alt="Slide 3"></a>
+      <a href="http://www.flickr.com/photos/b-tal/117037943/" title="We Eat Light | Flickr - Photo Sharing!" target="_blank"><img src="http://slidesjs.com/examples/standard/img/slide-4.jpg" width="570" height="270" alt="Slide 4"></a>
+      <a href="http://www.flickr.com/photos/bu7amd/3447416780/" title="�I must go down to the sea again, to the lonely sea and the sky; and all I ask is a tall ship and a star to steer her by.� | Flickr - Photo Sharing!" target="_blank"><img src="http://slidesjs.com/examples/standard/img/slide-5.jpg" width="570" height="270" alt="Slide 5"></a>
+      <a href="http://www.flickr.com/photos/streetpreacher/2078765853/" title="twelve.inch | Flickr - Photo Sharing!" target="_blank"><img src="http://slidesjs.com/examples/standard/img/slide-6.jpg" width="570" height="270" alt="Slide 6"></a>
+      <a href="http://www.flickr.com/photos/aftab/3152515428/" title="Save my love for loneliness | Flickr - Photo Sharing!" target="_blank"><img src="http://slidesjs.com/examples/standard/img/slide-7.jpg" width="570" height="270" alt="Slide 7"></a>
+    </div>
+    <a href="#" class="prev"><img src="{{ asset('bundles/gsblog/images/arrow-prev.png') }}" width="24" height="43" alt="Arrow Prev"></a>
+    <a href="#" class="next"><img src="{{ asset('bundles/gsblog/images/arrow-next.png') }}" width="24" height="43" alt="Arrow Next"></a>
+  </div>
+  <img src="{{asset('bundles/gsblog/images/example-frame.png')}}" width="739" height="341" alt="Example Frame" id="frame">
+</div>
+
+<div id="intro">
+  <div class="title">Realistic Outcome</div>
+  <p>A very warm welcome to our website. We provide innovative solutions in insurance and finance for our corporate and commercial sector clients that add real calue by delivering more for a great deal less.</p>
+
+</div>
+
+<img src="{{asset('bundles/gsblog/images/news.png')}}" width="853" height="44" id="separator">
+  </br>
+  </br>
+  <div id="news">
+    <form method="post" {{ form_enctype(form) }}>
+	
+	{{ form_widget(form) }}
+	
+	<input type="submit" />
+    </form>
+  </div>
+            
+            <div id="right">
+              <img src="{{asset('bundles/gsblog/images/lastNews.png')}}" width="157" height="42" id="lastN">
+                </br></br>
+                Winter Driving
+                </br></br>
+                12 days of Christmas Safety
+                </br></br>
+                New Glasgow office opens
+                </br></br>
+                Quinn Insurance 
+                </br></br></br></br></br></br></br>
+                <img src="{{asset('bundles/gsblog/images/partners.png')}}" width="156" height="37" id="lastN">
+                </br></br></br>
+                <img src="{{asset('bundles/gsblog/images/cherry.png')}}" width="138" height="56"></br></br></br>
+                <img src="{{asset('bundles/gsblog/images/biba.png')}}" width="68" height="109" ></br>
+                </br>
+                </br></br></br></br></br></br></br></br></br></br></br></br></br></br>           
+            </div>
+            
+            <div class="clear"></div>
+            
+	{# On définit un nouveau block, que les vues du bundle pourront étendre #}
+	{% block sdzblog_body %}
+	{% endblock %}
+
+{% endblock %}

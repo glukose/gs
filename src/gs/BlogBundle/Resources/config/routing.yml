@@ -1,3 +1,7 @@
 gsBlogBundle_homepage:
     pattern:  /first/
     defaults: { _controller: gsBlogBundle:Blog:index }
+
+gsBlogBundle_addArticle:
+    pattern: /add_article/
+    defaults: { _controller: gsBlogBundle:Blog:addArticle }

@@ -92,6 +92,14 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'gs\\BlogBundle\\Controller\\BlogController::indexAction',  '_route' => 'gsBlogBundle_homepage',);
         }
 
+        // gsBlogBundle_addArticle
+        if (rtrim($pathinfo, '/') === '/add_article') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'gsBlogBundle_addArticle');
+            }
+            return array (  '_controller' => 'gs\\BlogBundle\\Controller\\BlogController::addArticleAction',  '_route' => 'gsBlogBundle_addArticle',);
+        }
+
         // tutoWelcomeBundle_whoami
         if (0 === strpos($pathinfo, '/qui-suis-je') && preg_match('#^/qui\\-suis\\-je/(?P<name>\\w+)$#xs', $pathinfo, $matches)) {
             return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'tuto\\WelcomeBundle\\Controller\\HomepageController::whoAmIAction',)), array('_route' => 'tutoWelcomeBundle_whoami'));

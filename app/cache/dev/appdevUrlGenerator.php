@@ -24,6 +24,7 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
        '_configurator_step' => true,
        '_configurator_final' => true,
        'gsBlogBundle_homepage' => true,
+       'gsBlogBundle_addArticle' => true,
        'tutoWelcomeBundle_whoami' => true,
        'tutoWelcomeBundle_homepage' => true,
        'tutoWelcomeBundle_contact' => true,
@@ -110,6 +111,11 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
     private function getgsBlogBundle_homepageRouteInfo()
     {
         return array(array (), array (  '_controller' => 'gs\\BlogBundle\\Controller\\BlogController::indexAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/first/',  ),));
+    }
+
+    private function getgsBlogBundle_addArticleRouteInfo()
+    {
+        return array(array (), array (  '_controller' => 'gs\\BlogBundle\\Controller\\BlogController::addArticleAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/add_article/',  ),));
     }
 
     private function gettutoWelcomeBundle_whoamiRouteInfo()

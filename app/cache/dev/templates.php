@@ -105,4 +105,5 @@
   '::base.html.twig' => '/home/ubuntu/gs/Symfony/app/Resources/views/base.html.twig',
   '::layout.html.twig~' => '/home/ubuntu/gs/Symfony/app/Resources/views/layout.html.twig~',
   '::layout.html.twig' => '/home/ubuntu/gs/Symfony/app/Resources/views/layout.html.twig',
+  '::#layout.html.twig#' => '/home/ubuntu/gs/Symfony/app/Resources/views/#layout.html.twig#',
 );
