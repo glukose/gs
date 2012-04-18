@@ -76,6 +76,8 @@
   'gsBlogBundle:Default:index.html.twig~' => '/home/ubuntu/gs/Symfony/src/gs/BlogBundle/Resources/views/Default/index.html.twig~',
   'gsBlogBundle:Blog:index.html.twig' => '/home/ubuntu/gs/Symfony/src/gs/BlogBundle/Resources/views/Blog/index.html.twig',
   'gsBlogBundle:Blog:index.html.twig~' => '/home/ubuntu/gs/Symfony/src/gs/BlogBundle/Resources/views/Blog/index.html.twig~',
+  'gsBlogBundle:Blog:add.html.twig' => '/home/ubuntu/gs/Symfony/src/gs/BlogBundle/Resources/views/Blog/add.html.twig',
+  'gsBlogBundle:Blog:add.html.twig~' => '/home/ubuntu/gs/Symfony/src/gs/BlogBundle/Resources/views/Blog/add.html.twig~',
   'WebProfilerBundle:Collector:config.html.twig' => '/home/ubuntu/gs/Symfony/vendor/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/config.html.twig',
   'WebProfilerBundle:Collector:events.html.twig' => '/home/ubuntu/gs/Symfony/vendor/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/events.html.twig',
   'WebProfilerBundle:Collector:exception.html.twig' => '/home/ubuntu/gs/Symfony/vendor/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/exception.html.twig',
